@@ -41,8 +41,7 @@ Video Demo
 
 Here's a video / GIF that demos all of the app's implemented features:
 
-[<img src='http://i.imgur.com/link/to/your/gif/file.gif' title='Video Demo' width='' alt='Video Demo' />](https://imgur.com/a/FplEbCr)
-
+https://imgur.com/a/FplEbCr 
 GIF created with Kap (or ScreenToGif / your choice)
 
 Notes
