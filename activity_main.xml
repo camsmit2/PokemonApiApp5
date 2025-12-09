@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    tools:context=".MainActivity">
+
+    <!-- App title -->
+    <TextView
+        android:id="@+id/tvTitle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Pokémon API Viewer"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginBottom="16dp" />
+
+    <!-- Pokémon sprite -->
+    <ImageView
+        android:id="@+id/ivSprite"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:contentDescription="@string/pokemon_image"
+        app:layout_constraintTop_toBottomOf="@id/tvTitle"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="16dp"
+        tools:src="@mipmap/ic_launcher" />
+
+    <!-- Pokémon name -->
+    <TextView
+        android:id="@+id/tvName"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Name: -"
+        android:textSize="20sp"
+        app:layout_constraintTop_toBottomOf="@id/ivSprite"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="16dp" />
+
+    <!-- Pokémon ID -->
+    <TextView
+        android:id="@+id/tvId"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="ID: -"
+        android:textSize="18sp"
+        app:layout_constraintTop_toBottomOf="@id/tvName"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="8dp" />
+
+    <!-- Pokémon types -->
+    <TextView
+        android:id="@+id/tvTypes"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Type(s): -"
+        android:textSize="18sp"
+        app:layout_constraintTop_toBottomOf="@id/tvId"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="8dp" />
+
+    <!-- Button: Get Random Pokémon -->
+    <Button
+        android:id="@+id/btnRandom"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Get Random Pokémon"
+        app:layout_constraintTop_toBottomOf="@id/tvTypes"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="24dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
